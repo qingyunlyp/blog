@@ -1,0 +1,197 @@
+.content {
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+}
+
+.content input:-internal-autofill-previewed,
+.content input:-internal-autofill-selected {
+    -webkit-text-fill-color: #000;
+    transition: background-color 5000s ease-out 0.5s;
+}
+
+header {
+    height: 80px;
+    font-size: 20px;
+    background-color: rgb(0 0 0 / 34%);
+    line-height: 80px;
+    justify-content: space-between;
+}
+
+header h1 {
+    width: 20%;
+    text-align: center;
+    background-color: rgb(68 67 67 / 55%);
+    margin: 0;
+    line-height: 80px;
+    color: #fff;
+}
+
+header .user {
+    width: 20%;
+    height: 80px;
+    font-size: 16px;
+    text-align: center;
+    background-color: rgb(94, 91, 87);
+}
+
+.user p {
+    display: inline;
+    position: relative;
+    /* background-color: red; */
+}
+
+.user p:hover a {
+    display: block;
+    width: 70px;
+}
+
+.user a {
+    /* display: block; */
+    width: 70px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    background-color: rgb(255 0 0 / 59%);
+    line-height: normal;
+    overflow: hidden;
+    width: 0;
+    color: #fff;
+    display: none;
+}
+
+.main {
+    width: 100%;
+    height: 88%;
+    z-index: 99;
+    display: flex;
+}
+
+.nav-box {
+    width: 20%;
+    padding-top: 80px;
+    background-color: rgb(0 0 0 / 52%);
+}
+
+.nav-box nav {
+    margin: auto;
+}
+
+.nav-box li {
+    height: 66px;
+    line-height: 66px;
+}
+
+.current {
+    border-left: 5px solid rgb(167, 63, 167);
+}
+
+.nav-box a {
+    display: block;
+    padding-left: 18%;
+    height: 60px;
+    font-size: 20px;
+}
+
+.nav-box a:hover {
+    color: #fff;
+}
+
+section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(31 32 34 / 70%);
+    padding: 0 35px;
+    overflow-y: auto;
+}
+
+.top {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top span {
+    padding-left: 20px;
+}
+
+.top a {
+    display: block;
+    margin-right: 20px;
+    border: 1px solid #fff;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #53A844;
+    color: #000;
+}
+
+.top a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.checkall {
+    width: 40px;
+    text-align: center;
+    overflow: hidden;
+}
+
+section .checkall input {
+    margin-right: 4px;
+}
+
+.checkall input[type=checkbox]:after {
+    width: 13px;
+}
+
+.operation {
+    text-align: center;
+    width: 160px;
+}
+
+.operation a {
+    display: inline-block;
+    width: 60px;
+    height: 22px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: red;
+    color: #333;
+}
+
+.operation a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.operation .edit {
+    background-color: green;
+}
+
+
+/* 添加用户 */
+
+section h3 {
+    padding: 36px 0;
+}
+
+section .btn-default {
+    margin: 20px 0;
+}
+
+#article_news {
+    color: #000;
+}
+
+#text1 {
+    color: #000;
+}
+
+.pagination .pagecurrent {
+    margin: 0 0 0 -1px;
+    background-color: #337AB7;
+    color: #fff;
+}

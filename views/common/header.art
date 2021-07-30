@@ -1,0 +1,9 @@
+<header>
+    <h1 class="logo fl">user1</h1>
+    <div class="user fr">
+        <p>{{userinfo&& userinfo.nickname}}
+            <a href="/admin/exit">退出登录</a>
+        </p>
+
+    </div>
+</header>

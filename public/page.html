@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>page</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/paging.css">
+</head>
+
+<body>
+    <div class="pagger-box pagger" id="box"></div>
+    <script src="./js/paging.js"></script>
+    <script>
+        var setTotalCount = 1000;
+        $('#box').paging({
+            initPageNo: 3, // 初始页码
+            totalPages: 750, //总页数
+            totalCount: '合计' + setTotalCount + '条数据', // 条目总数
+            slideSpeed: 600, // 缓动速度。单位毫秒
+            jump: true, //是否支持跳转
+            callback: function(page) { // 回调函数
+                console.log(page);
+            }
+        })
+    </script>
+</body>
+
+</html>

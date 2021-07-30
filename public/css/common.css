@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+ul li {
+    list-style: none
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+textarea {
+    outline: none;
+}
+
+input:-internal-autofill-previewed,
+input:-internal-autofill-selected {
+    -webkit-text-fill-color: #fff;
+    transition: background-color 5000s ease-out 0.5s;
+}
+
+input[type=checkbox] {
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 11px;
+    height: 10px;
+    position: relative;
+}
+
+input[type=checkbox]:after {
+    position: absolute;
+    width: 6px;
+    height: 13px;
+    top: 0;
+    content: " ";
+    background: rgba(11, 116, 180, 1);
+    border: 1px solid #1d90c5;
+    color: #fff;
+    display: inline-block;
+    visibility: visible;
+    padding: 0px 3px;
+    border-radius: 3px;
+}
+
+input[type=checkbox]:checked:after {
+    content: "✓";
+    font-size: 12px;
+}
+
+input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #fff;
+}
+
+input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #fff;
+}
+
+input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #fff;
+}
+
+.clear {
+    clear: both
+}
+
+.cavs {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+
+body {
+    font-family: "微软雅黑";
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    color: #F6F6F6 !important;
+    background: linear-gradient(-45deg, #231f6e, #20bdfe, #2600b4, #1d1a44);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.table-hover>tbody>tr:hover {
+    background-color: rgb(245 245 245 / 60%)!important;
+}

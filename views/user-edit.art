@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户中心</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/user.css">
+    <link rel="stylesheet" href="/bootstrap-3.4.1-dist/css/bootstrap.css">
+</head>
+
+<body>
+    <div class="content">
+        {{include './common/header.art'}}
+        <div class="main">
+            <div class="nav-box">
+                <nav>
+                    <ul>
+                        <li class="current"><a href="/admin/user">用户管理</a></li>
+                        <li><a href="/admin/article">文章管理</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <section>
+                <h3>用户信息</h3>
+                <form method="POST" action="/admin/user-edit{{userInfo?'?id='+userInfo._id:''}}">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">昵称</label>
+                        <input type="text" value="{{userInfo&& userInfo.nickname}}" name="nickname" class="form-control" id="nickname" placeholder="昵称">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">用户名</label>
+                        <input type="text" {{ userInfo && 'disabled'}} value="{{userInfo&&userInfo.username}}" name="username" class="form-control" id="username" placeholder="用户名">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputFile">密码</label>
+                        <input type="password" onfocus="this.value=''" onblur="this.nextElementSibling.value='1' " value="{{userInfo&&userInfo.password}}" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <input type="hidden" name="isPwd" value="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputFile">权限</label>
+                        <select class="form-control" name="privilege">
+                            <option value="admin" >管理员</option>
+                            <option value="normal" {{userInfo && (userInfo.privilege == 'normal' ? 'selected' : '')}} >普通用户</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-default">添加</button>
+                </form>
+            </section>
+
+        </div>
+    </div>
+</body>
+
+</html>

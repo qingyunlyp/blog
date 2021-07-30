@@ -1,0 +1,123 @@
+.loginBox {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 520px;
+    height: 500px;
+    background: url(../images/bg.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.loginBox h1 {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
+    margin-top: 70px;
+    letter-spacing: 7px;
+    margin-bottom: 10px
+}
+
+.txt-box {
+    width: 300px;
+    height: 45px;
+    margin-left: 105px;
+    border: 1px solid #1d90c5;
+    margin-bottom: 10px;
+    background: rgba(11, 116, 180, 0.8);
+    display: flex;
+}
+
+.icon {
+    float: left;
+    width: 45px;
+}
+
+.icon span {
+    display: block;
+    width: 20px;
+    margin: 12px;
+    font-size: 20px;
+    color: #8ECCFF;
+}
+
+.icon img {
+    display: block;
+    width: 20px;
+    margin: 12px;
+}
+
+.txt {
+    flex: 1;
+}
+
+.txt input {
+    border: 0;
+    background: none;
+    outline: none;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 14px
+}
+
+.form-control {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.form-control option {
+    background-color: rgba(11, 116, 180, 0.8);
+    font-size: 14px;
+}
+
+.reg-box {
+    width: 300px;
+    margin-left: 105px;
+    overflow: hidden
+}
+
+.reg-box .btn {
+    width: 300px;
+    height: 45px;
+    background: #3FB5E3;
+    border: 0;
+    outline: none;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #1d90c5;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.login-box {
+    width: 300px;
+    margin-left: 105px;
+    overflow: hidden;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+.login-box a {
+    color: #1d90c5;
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 3px;
+}

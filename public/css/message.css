@@ -1,0 +1,25 @@
+.loginBox {
+    background-image: none;
+    background-color: rgb(0 0 0 / 31%);
+    height: 250px;
+}
+
+.message {
+    text-align: center;
+}
+
+.message .msage {
+    color: bisque;
+    font-weight: bold;
+    font-size: 26px;
+    letter-spacing: 7px;
+    margin: 50px 0;
+}
+
+.message .dt p {
+    display: inline;
+}
+
+.message p a {
+    color: bisque;
+}
